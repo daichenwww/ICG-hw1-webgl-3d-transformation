@@ -1,0 +1,253 @@
+/* General UI spacing */
+.spacer {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #444;
+    font-weight: normal;
+}
+
+th {
+    text-align: center;
+    font-weight: 600;
+    color: #444;
+}
+
+td {
+    text-align: center;
+    padding: 0.2em;
+    font-weight: 400;
+    color: #444;
+}
+
+/* Fieldset */
+fieldset {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    color: #444;
+    font-weight: 400;
+}
+
+fieldset table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+legend {
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 0 0.5em;
+    color: #444;
+}
+
+/* Radio buttons */
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+    padding: 0.3em 0.6em;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #444;
+    font-weight: 400;
+}
+
+/* Light Coefficient table */
+.coeff-table .label {
+    width: 20%;
+    text-align: left;
+    font-weight: 600;
+    color: #444;
+}
+
+.coeff-table .slider-cell {
+    width: 80%;
+}
+
+.coeff-table input[type="range"] {
+    width: 100%;
+}
+
+/* Range slider style (optional override) */
+input[type="range"] {
+    max-width: 80%;
+    vertical-align: middle;
+}
+
+/* Transform table */
+.transform-table th {
+    font-weight: 400;
+    color: #444;
+}
+
+.transform-table td {
+    font-weight: 600;
+    text-align: left;
+    color: #444;
+}
+
+/* Shear table */
+.shear-label {
+    vertical-align: top;
+    text-align: left;
+    font-weight: 600;
+    padding-top: 0.3em;
+    color: #444;
+}
+
+.shear-cell {
+    vertical-align: top;
+    text-align: center;
+}
+
+.shear-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.2em;
+}
+
+.shear-group label {
+    font-size: 0.75em;
+    font-weight: 400;
+    margin-bottom: 0em;
+    text-align: center;
+    color: #444;
+}
+
+/* Collapsible Object Controls */
+details.object-control {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    background-color: #f9f9f9;
+    color: #444;
+    font-weight: 400;
+}
+
+details.object-control summary {
+    cursor: pointer;
+    font-size: 1.05em;
+    padding: 0.3em 0;
+    color: #444;
+    font-weight: 600;
+}
+
+.control-panel {
+    width: 30%;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 1em;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #444;
+    font-weight: 400;
+}
+
+/* Canvas and layout */
+
+body {
+    margin: 0;
+    height: 100vh;
+    color: #444;
+    font-weight: 400;
+}
+
+.layout-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#ICG-canvas {
+    width: 1200px;
+    height: 590px;
+    display: block;
+}
+
+.canvas-container {
+    width: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5em;
+    box-sizing: border-box;
+    color: #444;
+    font-weight: 400;
+}
+
+/* Instruction blocks */
+.instruction-block {
+    margin: 2em auto 3em auto;
+}
+
+.instruction-block h3 {
+    margin-top: 0;
+    color: #444;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.3em;
+    font-weight: 600;
+}
+
+.instruction-block p {
+    margin: 0.4em 0;
+    font-size: 0.95em;
+    color: #444;
+    font-weight: 400;
+}
+
+/*  Name */
+.student-info {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    color: #666;
+    padding: 4px 8px;
+    z-index: 100;
+    font-weight: 400;
+}
+
+/* Texture */
+.texture-section label {
+    display: block;
+    margin: 0.4em 0;
+    font-weight: 500;
+    color: #444;
+    text-align: center;
+}
+
+.texture-section input[type="checkbox"] {
+    margin-right: 0.5em;
+}
+
+.texture-section select {
+    width: 100%;
+    max-width: 90%;
+    padding: 0.3em;
+    margin-top: 0.3em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-weight: 400;
+    color: #444;
+    background-color: white;
+    box-sizing: border-box;
+}

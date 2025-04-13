@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>ICG HW1</title>
+
+    <script src="./js/glMatrix-0.9.5.min.js"></script>
+    <script src="./js/webgl-utils.js"></script>
+    <script src="./js/hw1.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body onload="webGLStart();">
+
+    <div class="layout-container">
+
+        <div class="control-panel">
+            <!-- Shading Mode -->
+            <div class="spacer">
+                <fieldset>
+                    <legend>Shading Mode</legend>
+                    <div class="radio-group">
+                        <label><input type="radio" name="shading_mode" value="0" checked
+                                onchange="update_shading_mode()"> Flat</label>
+                        <label><input type="radio" name="shading_mode" value="1" onchange="update_shading_mode()">
+                            Gouraud</label>
+                        <label><input type="radio" name="shading_mode" value="2" onchange="update_shading_mode()">
+                            Phong</label>
+                        <label><input type="radio" name="shading_mode" value="3" onchange="update_shading_mode()">
+                            Toon</label>
+
+                    </div>
+                </fieldset>
+            </div>
+
+            <!-- Light Controls -->
+            <div id="light-controls" class="spacer"></div>
+
+            <!-- Object Controls -->
+            <div id="object-controls" class="spacer"></div>
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="ICG-canvas" width="1200" height="590"></canvas>
+
+            <div class="instruction-block">
+                <h3>Camera Position and Direction Control</h3>
+                <p>* W / S: Move forward / backward</p>
+                <p>* A / D: Move left / right</p>
+                <p>* Q / E: Move up / down</p>
+                <p>* Mouse: Hold and drag to rotate camera</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="student-info">R13944008 吳宜宸</div>
+
+</body>
+
+
+
+</html>
