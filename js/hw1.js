@@ -899,7 +899,7 @@ function update_clip() {
         var clipX = parseInt(document.getElementById("clipX_" + i).value);
         var clipY = parseInt(document.getElementById("clipY_" + i).value);
         var clipZ = parseInt(document.getElementById("clipZ_" + i).value);
-        objects[i].clipPlane = vec3.create([clipX + offsets[i], clipY, clipZ]);
+        objects[i].clipPlane = vec3.create([clipX + offsets[i][0], clipY, clipZ]);
     }
 }
 
